@@ -1,0 +1,71 @@
+.menu {
+  width: 1vw;
+  height: 2vh;
+  border-radius: 1vh;
+  background: #07F;
+  transition: height 250ms ease-in-out, width 250ms ease-in-out 250ms;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu i{
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  left: 27px;
+  color: white;
+}
+
+.open {
+  /* width: 300px;
+  height: 350px;
+  overflow: hidden; */
+  transition: width 250ms ease-in-out, height 250ms ease-in-out 250ms;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.button:hover .ion-navicon-round {color: #DFF;}
+.button:hover .ion-close-round {color: #FDD;}
+
+.title {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  color: white;
+}
+
+.options {
+  width: 300px;
+  height: 275px;
+  position: absolute;
+  top: 80px;
+}
+
+.opt {
+  width: 250px;
+  height: 50px;
+  margin: 1px 25px 1px 25px;
+  background: #FFF0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+  color: white;
+  border-radius: 25px;
+}
+
+.opt:hover {
+  background: #FFF5;
+}

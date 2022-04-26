@@ -1,0 +1,61 @@
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: white;
+  position: relative;
+  padding: 0.5em 0.75em;
+  line-height: 0.875;
+  font-size: 0.75em;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+  --webkit-font-smoothing: antialiased;
+  will-change: transform;
+}
+button:after, button:before {
+  content: "";
+  display: block;
+  width: 20px;
+  border: 1px solid black;
+  position: absolute;
+  bottom: -2px;
+  top: -2px;
+  transition: width 0.15s ease-in-out;
+}
+button:before {
+  border-right: none;
+  left: -2px;
+}
+button:after {
+  border-left: none;
+  right: -2px;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+button:hover:before, button:hover:after {
+  width: calc(50% + 2px);
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-out;
+}
+
+body {
+  display: flex;
+}
+body button {
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  margin: auto auto;
+  text-align: center;
+}
+
+body {
+  font-size: 1.25rem;
+  height: 100vh;
+}

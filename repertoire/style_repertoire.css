@@ -1,0 +1,189 @@
+@font-face {
+      font-family: Fjalla One;
+      src: url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+}
+
+@font-face {
+      font-family: "myriad-pro";
+      src: url("https://use.typekit.net/kvr3miv.css");
+}
+
+html,
+body {
+      margin: 0%;
+      padding: 0%;
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+      background: #0f0f0f88;
+      margin-top: 5vh;
+      font-family: "Fjalla One", sans-serif;
+}
+
+.image-slider {
+      z-index: 0;
+      /* margin: 0 auto; */
+      padding: 0;
+      width: 100%;
+      height: 90vh;
+      /* top: 5%; */
+}
+
+.image-slider video,
+.image-slider video source {
+      height: 80vh;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+}
+
+.image-slide {
+      height: 80vh;
+      margin-top: 0vh;
+      /* margin: 0 auto; */
+}
+
+.slick-slide.slick-center {
+      transform: scale(1.2);
+      transition: transform .25s 1.4s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slick-slide {
+      transition: transform .20s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slider-control {
+      margin: 0%;
+      position: absolute;
+      z-index: 2;
+      bottom: 12vh;
+      left: 12%;
+      transform: translate(-50%, -50%);
+      display: flex;
+}
+
+button {
+      color: #fff;
+      background: none;
+      /* padding: 50%; */
+      border: 1px solid rgba(255, 255, 255, 0.0);
+      font-size: 2vw;
+      height: 7.5vh;
+      width: 7.5vh;
+      /* border-radius: 50%; */
+      /* margin: .4em; */
+      cursor: pointer;
+display: inline-block;
+}
+
+button p {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+}
+
+button:focus {
+      outline: none;
+}
+
+.block-1 {
+      z-index: 1;
+      position: fixed;
+      height: 80vh;
+      width: 5%;
+      left: 0%;
+      background: #0f0f0f;
+}
+
+.block-2 {
+      z-index: 1;
+      position: fixed;
+      height: 80vh;
+      width: 50%;
+      left: 0%;
+      background: #0f0f0f;
+}
+
+.block-3 {
+      z-index: 1;
+      position: fixed;
+      height: 80vh;
+      width: 5%;
+      right: 0%;
+      background: #0f0f0f;
+}
+
+.overlay {
+      z-index: 1;
+      position: fixed;
+      height: 80vh;
+      width: 20%;
+      left: 5%;
+      background: rgba(0, 0, 0, 0);
+}
+
+.text-slider-wrapper {
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      height: 80vh;
+      top: 10vh;
+}
+
+
+.text-slide {
+      height: 80vh;
+      width: 40vh;
+}
+
+.text-slide h1 {
+      color: #fff;
+      font-size: 3vw;
+      font-family: "Fjalla One", sans-serif;
+      font-weight: lighter;
+      text-transform: uppercase;
+      padding-left: 10%;
+}
+
+.text-slide p {
+      height: 50vh;
+      width: 30vW;
+      color: #fff;
+      font-size: 0.8vw;
+      font-family: "myriad-pro", sans-serif;
+      font-weight: 50;
+      text-transform: capitalize;
+      padding-left: 10%;
+      text-overflow: clip;
+      letter-spacing: 0.1vh;
+      text-align: left;
+      line-height: 1.5;
+}
+
+
+@media(max-width: 990px) {
+
+      .block-2,
+      .overlay {
+            display: none;
+      }
+
+      .block-1 {
+            width: 50%;
+      }
+
+      .block-3 {
+            width: 12%;
+      }
+
+      .slide-slick {
+            display: none !important;
+      }
+
+      .text-slide h1 {
+            font-size: 30px !important;
+      }
+
+}
