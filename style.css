@@ -823,7 +823,14 @@ body {
     .expBtn h1 {
         font-size: 4rem;
     }
-
+    .menu {
+        width: 5vw;
+        height: 10vh;
+    }
+    .navigation__button {
+        width: 5vw;
+        height: 10vh;
+    }
 }
 
 /* Big screen devices (889px and above) */
