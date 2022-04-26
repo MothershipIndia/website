@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mothership Future Cities Laboratory</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./exp/enterBtn/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./images/cursor/style.css"> -->
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN  -->
+    <div class="loading-screen">
+        <div class="loadingVideo">
+            <video autoplay loop class="video-background" muted plays-inline>
+                <source src="./loading/Mothership Logo Animation.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- MOUSE CURSOR -->
+    <!-- <div class="cursor-dot-outline" style="z-index: 6;"></div>
+    <div class="cursor-dot" style="z-index: 6;"></div> -->
+
+
+    <!-- MENU BUTTON & BAR***** checkbox js to activate on drag click -->
+    <div class="menu">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+            </input>
+        </div>
+
+        <div id="options">
+            <a1 class="menu_btn" href="#aboutPage">ABOUT</a1>
+            <a5 class="menu_btn" href="#2">EXPERIENCE</a5>
+            <a2 class="menu_btn" href="#repertoire">REPERTOIRE</a2>
+            <a7 class="menu_btn" href="#pulp">PULP</a7>
+            <a3 class="menu_btn" href="#myBlog">BLOG</a3>
+            <a4 class="menu_btn" href="#contact">CONTACT</a4>
+        </div>
+    </div>
+
+    <!-- Home Page  -->
+    <div class="onePage" id="homePage">
+        <div class="content">
+            <div class="graphic">
+                <div class="bgFadeIn">
+                    <iframe id="twStars" src="./images/twinklingStars/index.html" frameborder="0"></iframe>
+                    <img id="bg2" src="images/2.png" />
+                    <img id="bg1" src="images/1.png" />
+                </div>
+
+                <div class="bgInteractive">
+                    <img id="img1" src="images/Building Feather.gif" />
+                    <!-- <img id="img2" src="images/" /> -->
+                    <img id="img3" src="images/L2-SHIP.png" />
+                    <img id="img4" src="images/GLOW 3.PNG" />
+                    <img id="img5" src="images/Move Light1.png" />
+                    <img id="img6" src="images/Move Light2.png" />
+                    <img id="img7" src="images/Code24.png" />
+                    <img id="img8" src="images/BLUR BUILDING.png" /> 
+                    <img id="img9" src="images/LOGO GLOW.PNG " />
+                    <img id="img10" src="images/MUTANT-FINGERS.gif" />
+                    <img id="img11" src="images/MOTHERSHIP LOGO.PNG" />
+                    
+                    <!-- <video class="assassin" autoplay loop muted >
+                        <source src="./images/MUTANT VIDEO.mp4" type="video/mp4">
+                    </video> -->
+
+                    <iframe class="portalStatic" src="./images/portalStatic/index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="pages-menu">
+                <section class="page" id="1">
+                    <!-- <h1>Home</h1> -->
+                </section>
+                <div class="gap">
+                </div>
+                <section class="page" id="2">
+                    <!-- <h1>Experience</h1> -->
+                    <div class="wrapper">
+                        <div class="expBtn" id="cyberpunk" href="expPage" style="cursor: pointer; font-size: 5em;">
+                            <h1 class="text">ENTER</h1>
+                            <h1 class="text">ENTER</h1>
+                            <h1 class="text">ENTER</h1>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Page  -->
+    <div class="pop-up" id="aboutPage">
+        <iframe id="iframeid" src="./about/index_about.html" id="a1" frameborder="0"></iframe>
+        <span id="aboutPage__close" class="close">ₓ</span>
+    </div>
+    <div class="overlay" id="myOverlay"></div>
+
+    <!-- Repertoire Page  -->
+    <div class="pop-up" id="repertoire">
+        <iframe id="iframeid" src="./repertoire/index_repertoire.html" id="a3" frameborder="0"></iframe>
+        <span id="repertoire__close" class="close">ₓ</span>
+    </div>
+    <div class="overlay" id="myOverlay2"></div>
+
+    <!-- Blog Page  -->
+    <div class="pop-up" id="myBlog">
+        <iframe id="iframeid" src="./blog/index_blog.html" id="a4" frameborder="0"></iframe>
+        <span id="myBlog__close" class="close">ₓ</span>
+    </div>
+    <div class="overlay" id="myOverlay3"></div>
+
+    <!-- Contact Page  -->
+    <div class="pop-up" id="contact">
+        <iframe id="iframeid" src="./contact/index_contact.html" id="a5" frameborder="0"></iframe>
+        <span id="contact__close" class="close">ₓ</span>
+    </div>
+    <div class="overlay" id="myOverlay4"></div>
+
+    <!-- Experience Page  -->
+    <div class="pop-up" id="expPage">
+        <iframe id="iframeid" src="./exp/expPages/index.html" id="a6" frameborder="0"></iframe>
+        <span id="exp__close" class="close">ₓ</span>
+    </div>
+    <div class="overlay" id="myOverlay5"></div>
+
+    <!-- Pulp Page  -->
+    <div class="pop-up" id="pulp">
+        <iframe id="iframeid" src="./pulp/index.html" id="a7" frameborder="0"></iframe>
+        <span id="pulp__close" class="close">Back to home</span>
+    </div>
+    <div class="overlay" id="myOverlay6"></div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./exp/enterBtn/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="./images/menuDrag/script.js"></script>
+    <!-- <script src="./images/cursor/script.js"></script> -->
+
+
+</body>
+
+</html>
