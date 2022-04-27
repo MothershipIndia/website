@@ -845,24 +845,11 @@ body {
     }
 }
 
-/* Extra big screen devices (1200px and above) */
-@media only screen and (max-width: 1366px) {
-    .open {
-        width: 10%;
-    }
 
-}
 
 @media only screen and (max-width: 4000px) {
     .open {
         width: 7%;
-    }
-
-}
-
-@media only screen and (max-width: 1920px) {
-    .open {
-        width: 9%;
     }
 
 }
@@ -877,6 +864,18 @@ body {
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    .open {
+        width: 9%;
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (max-width: 1366px) {
+    .open {
+        width: 10%;
+    }
+}
 
 
 /* Queries using max-height */
