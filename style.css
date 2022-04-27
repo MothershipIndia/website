@@ -853,6 +853,12 @@ body {
 
 }
 
+@media only screen and (max-width: 4000px) {
+    .open {
+        width: 7%;
+    }
+
+}
 
 @media only screen and (max-width: 1920px) {
     .open {
@@ -871,12 +877,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 4000px) {
-    .open {
-        width: 7%;
-    }
 
-}
 
 /* Queries using max-height */
 
