@@ -861,7 +861,7 @@ body {
 
 }
 
-@media only screen and (min-width: 1910px) {
+@media only screen and (max-width: 2500px) {
     .open {
         width: 250px;
     }
@@ -869,13 +869,14 @@ body {
     .expBtn h1 {
         font-size: 10vw;
     }
-
-    /* .menu_btn {
-        font-size: 1.5vw;
-        line-height: 1vh;
-    } */
 }
 
+@media only screen and (max-width: 4000px) {
+    .open {
+        width: 300px;
+    }
+
+}
 
 /* Queries using max-height */
 
