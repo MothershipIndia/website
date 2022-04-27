@@ -856,14 +856,14 @@ body {
 
 @media only screen and (max-width: 1920px) {
     .open {
-        width: 8%;
+        width: 9%;
     }
 
 }
 
-@media only screen and (min-width: 2800px) {
+@media only screen and (min-width: 1910px) {
     .open {
-        width: 10%;
+        width: 250px;
     }
 
     .expBtn h1 {
